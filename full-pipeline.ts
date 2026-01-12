@@ -244,6 +244,8 @@ const navigatePageAndGetContent = (
 
 // Main function to scrape a URL - manages browser lifecycle (launches browser, navigates page, closes browser)
 // Uses pipeline style with pipe and flatMap instead of Effect.gen
+// You COULD use generators here if you want, but I prefer the pipeline style for readability and composability.
+// See: https://effect.website/docs/getting-started/building-pipelines
 const scrapeUrl = (
   url: string,
   options?: { timeout?: number }
