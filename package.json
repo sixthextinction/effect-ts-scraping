@@ -1,0 +1,33 @@
+{
+  "name": "effect-ts-scraping",
+  "version": "1.0.0",
+  "description": "Building a fault-tolerant web data pipeline using Effect",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "example-before": "tsx examples/example-before.ts",
+    "example-after": "tsx examples/example-after.ts",
+    "full-pipeline": "tsx full-pipeline.ts"
+  },
+  "keywords": [
+    "web-scraping",
+    "effect",
+    "functional-programming"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "effect": "^3.0.0",
+    "node-fetch": "^2.7.0",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^20.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/node-fetch": "^2.6.11",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
+
