@@ -1,14 +1,13 @@
 /**
- * Simplified data ingestion pipeline using Effect-TS with Puppeteer and Bright Data
+ * Proof of concept data ingestion pipeline using Effect with Puppeteer and Bright Data
  * 
  * Demonstrates core Effect concepts:
  * - Typed error handling with tagged errors
  * - Declarative retry logic with schedules
  * - Resource management with acquireUseRelease
  * - Composable pipelines with pipe, flatMap, and andThen
- * 
- * This version removes dependency injection and complex rate limiting to focus on
- * the essential value propositions of Effect.
+ * - CAPTCHA solving and proxy rotation are automatically handled by Bright Data
+ * This version foregoes any complex dependency injection (for, say a Puppeteer browser service)and complex rate limiting to focus on the essential value propositions of Effect.
  */
 
 import {
