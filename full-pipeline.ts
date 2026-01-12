@@ -296,6 +296,7 @@ const isRetryableError = (error: ScrapingError): boolean =>
 // Effect.retry retries an effect according to a Schedule policy
 // The 'until' predicate determines which errors should trigger retries
 // See: https://effect.website/docs/error-management/retrying
+// BTW: Effect<A, E, R> is just Effect ecosystem convention for Effect<Success, Error, Requirements>
 const retryIfRetryable = <A, E extends ScrapingError, R>(
   effect: Effect.Effect<A, E, R>
 ): Effect.Effect<A, E, R> =>
@@ -309,7 +310,6 @@ const retryIfRetryable = <A, E extends ScrapingError, R>(
 // ============================================================================
 
 // Simple rate limiting: just add a delay between requests
-// Effect<A, E, R> is just Effect ecosystem convention for Effect<Success, Error, Requirements>
 const withSimpleRateLimit = <A, E, R>(
   effect: Effect.Effect<A, E, R>
 ): Effect.Effect<A, E, R> =>
