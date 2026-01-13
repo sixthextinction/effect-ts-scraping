@@ -1,4 +1,4 @@
-# Data Ingestion Pipelines with Effect.ts
+# Data Ingestion Pipelines with Effect-TS
 
 This repo is accompaniment for my blog post on Fault tolerant web data pipelines.
 
@@ -77,4 +77,4 @@ Compared to a vanilla TypeScript implementation, the Effect-based pipeline has a
 -   Structured errors make debugging and observability far easier
 -   Concurrency is safer by default, especially around shared resources
 
-None of this makes building with Effect.ts _easier_. The learning curve is very steep. But once the system is in place, entire categories of production bugs in web data pipelines simply stop existing. I'd say it's well worth learning.
+None of this makes building with Effect-TS _easier_. The learning curve is very steep. But once the system is in place, entire categories of production bugs in web data pipelines simply stop existing. I'd say it's well worth learning.
