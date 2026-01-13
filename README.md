@@ -5,8 +5,9 @@ This repo is accompaniment for my blog post on Fault tolerant web data pipelines
 [You can read it here.](https://javascript.plainenglish.io/building-a-fault-tolerant-web-data-ingestion-pipeline-with-effect-ts-0bc5494282ba)
 
 
-
 Proof of concept for a fault-tolerant web data pipeline built with Effect + proxies (Bright Data for general unblocking + CAPTCHA solving), demonstrating typed error handling, resource management, retry logic, and composable pipelines.
+
+If you want to learn, some examples are provided in ./examples
 
 ## Setup
 
@@ -24,10 +25,8 @@ npm install
      ```
    - **To run without proxy**: Simply don't create a `.env` file or leave the Bright Data variables unset. The scraper will run directly without a proxy.
 
-3. Run examples:
+3. Run pipeline:
 ```bash
-npm run example-before    # vanilla TypeScript version
-npm run example-after      # Effect-TS version
 npm run full-pipeline      # complete scraping pipeline
 ```
 
