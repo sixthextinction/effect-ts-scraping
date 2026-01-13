@@ -2,6 +2,8 @@
 
 This repo is accompaniment for my blog post on Fault tolerant web data pipelines.
 
+[You can read it here.](https://javascript.plainenglish.io/building-a-fault-tolerant-web-data-ingestion-pipeline-with-effect-ts-0bc5494282ba)
+
 
 
 Proof of concept for a fault-tolerant web data pipeline built with Effect + proxies (Bright Data for general unblocking + CAPTCHA solving), demonstrating typed error handling, resource management, retry logic, and composable pipelines.
